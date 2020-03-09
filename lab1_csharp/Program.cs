@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,13 +10,13 @@ namespace lab1_csharp
     {
         static void Main(string[] args)
         {
-            int number = 0;
-            int k = 9;
-            for(int n = 1; n<=5;n++)
-            {
-                number = (n * k) % 24 + 1;
-                Console.WriteLine (number);
-            }
+            Console.WriteLine("Input a number: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+             int convertnumber = Convert.ToInt32(Math.Pow(number, 2));
+            Console.WriteLine("Answer:");
+            Console.WriteLine(convertnumber);
+
+
 
         }
     }
